@@ -3,56 +3,58 @@
     color: rgb(228, 228, 228);
 }
 
-@media screen and (max-width: 600px) {
-    h1 {
-        text-align: center;
-    }
-}
 
 
 h1{
     text-align: center;
 }
 
-
-.projects{
+.container{
     display: grid;
-    grid-template-rows: auto 1fr 1fr; 
-    grid-template-columns: repeat(2, 1fr);
-    gap:10px;
-    width: 400px;
-    height: 400px; 
-    margin: 0 auto;
-    justify-items: center;
-    align-items: center;   
+    grid-template-columns: 50% 1fr;
+    margin: 75px;
 }
 
-.projects button{
-    border: 2px solid rgb(228, 228, 228);
+.info{
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+}
+
+img{
+    width: 350px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    width: 800px;
+  }
+  
+  .title {
+    grid-column: span 2; 
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .item {
+    border: 1px solid rgb(228, 228, 228);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    width: 175px;
-    height: 225px;
-    margin: 25px;
-    padding: 10px;
-    color: rgb(228, 228, 228);
-}
+    font-weight: bold;
+  }
+  
 
-@media screen and (max-width: 500px) {
-    .projects {
-        display: flex;
-        flex-direction: column;
-    }
-}
 
-@media screen and (max-width: 500px) {
-    .projects button{
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 #encore{
     background-color: #284C63;

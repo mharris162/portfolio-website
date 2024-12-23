@@ -9,13 +9,6 @@ h1{
     text-align: center;
 }
 
-@media (max-width: 550px) {
-    .container{
-        display: flex;
-      flex-direction: column; 
-      align-items: center;  
-    }
-}
 
 .container{
     display: grid;
@@ -23,18 +16,44 @@ h1{
     margin: 75px;
 }
 
+@media only screen and (max-width: 1500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .info{
     align-items: center;
     padding: 20px;
     border-radius: 8px;
     width: 600px;
-    margin-left: 50px;
 }
 
 img{
     width: 350px;
     height: 250px;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+    h1{
+        text-align: center;
+    }
+    img{
+        align-items: center;
+    }
+    .info{
+        width: 300px;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
 }
 
 
@@ -45,6 +64,8 @@ img{
     gap: 10px; 
     width: 800px;
   }
+
+
   
   .title {
     grid-column: span 2; 
@@ -63,7 +84,44 @@ img{
     font-weight: bold;
     margin-right: 50px;
   }
-  
+
+  @media only screen and (max-width: 700px) {
+    .grid{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .title{
+        text-align: center;
+        margin: 0px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+    }
+}
+ 
+
+  @media only screen and (max-width: 1500px) {
+    /* Mobile container settings */
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        text-align: center;
+    }
+    .item{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
 
 
